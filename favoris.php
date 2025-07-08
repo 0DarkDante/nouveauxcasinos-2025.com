@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./images/fav.jpg" />
-    <title>Casinos Pourvous</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://nouveauxcasinos-2025.com/images/fav.jpg"
+    />
+    <title>Nouveaux Casinos - 2025</title>
+    <link
+      rel="stylesheet"
+      href="https://nouveauxcasinos-2025.com/css/style.css"
+    />
   </head>
   <body>
     <header>
@@ -24,18 +31,30 @@
 
       <div class="header">
         <div class="container">
-          <a href="./index.html"><h3>Casinos Pourvous</h3></a>
+          <a href="https://nouveauxcasinos-2025.com/index.php"
+            ><h3>Nouveaux Casinos - 2025</h3></a
+          >
           <div class="nav">
             <ul>
               <li>
-                <a href="./retraits.html">Retraits Rapides</a>
-              </li>
-              <li><a href="./favoris.html">Favoris des Joueurs</a></li>
-              <li>
-                <a href="./casinosVerif.html">Casinos Vérifiés</a>
+                <a href="https://nouveauxcasinos-2025.com/retraits.php"
+                  >Retraits Rapides</a
+                >
               </li>
               <li>
-                <a href="./fiables.html">Nouveaux Fiables</a>
+                <a href="https://nouveauxcasinos-2025.com/favoris.php"
+                  >Favoris des Joueurs</a
+                >
+              </li>
+              <li>
+                <a href="https://nouveauxcasinos-2025.com/casinosVerif.php"
+                  >Casinos Vérifiés</a
+                >
+              </li>
+              <li>
+                <a href="https://nouveauxcasinos-2025.com/fiables.php"
+                  >Nouveaux Fiables</a
+                >
               </li>
             </ul>
           </div>
@@ -44,69 +63,42 @@
     </header>
 
     <main class="styled-section">
-      <h1>Conditions Générales d’Utilisation – CasinosComparesFR</h1>
+      <h1>Préférés par les Joueurs Français</h1>
 
       <p>
-        Bienvenue sur le site officiel de <strong>CasinosComparesFR</strong>,
-        accessible à l’adresse
-        <a href="https://casinosonlineapostas.com" target="_blank"
-          >https://casinosonlineapostas.com</a
-        >. Cette plateforme propose uniquement des jeux gratuits, conçus pour le
-        divertissement. Aucun gain en argent réel n’est possible. L’accès est
-        réservé aux personnes majeures ou ayant atteint l’âge légal pour jouer
-        dans leur pays de résidence.
+        Fatigué des promesses marketing vides ? Nous avons examiné les vrais
+        avis laissés par les joueurs français. Ces plateformes se distinguent
+        par des retours honnêtes, des communautés engagées et des retraits sans
+        complications.
       </p>
 
       <p>
-        <strong>À savoir :</strong><br />
-        Tous les jeux disponibles sont des simulations. Aucune somme réelle ne
-        peut être remportée, et l’expérience proposée ne doit pas être
-        interprétée comme représentative des jeux avec mises réelles.
+        Nous avons aussi évalué ce qui compte réellement pour les Français : une
+        navigation fluide sur mobile, des méthodes de paiement locales (CB,
+        Paylib, Neteller…), des bonus transparents et un service client en
+        français.
       </p>
 
       <p>
-        <strong>Utilisation des données personnelles</strong><br />
-        En utilisant notre site, vous acceptez notre politique de
-        confidentialité. Les données fournies volontairement sont traitées dans
-        le respect des réglementations en vigueur sur la protection de la vie
-        privée.
-      </p>
-
-      <p>
-        <strong>Conduite des utilisateurs</strong><br />
-        Les visiteurs sont invités à interagir de manière respectueuse sur le
-        site. Bien que nous modérions les contenus, nous ne pouvons être tenus
-        responsables des publications pouvant enfreindre la législation ou
-        porter atteinte aux droits de tiers.
-      </p>
-
-      <p>
-        <strong>Propriété intellectuelle</strong><br />
-        Le contenu du site (textes, visuels, design, sons, etc.) est protégé par
-        des droits de propriété intellectuelle. Toute utilisation sans
-        autorisation préalable est strictement interdite.
-      </p>
-
-      <p>
-        <strong>Liens externes</strong><br />
-        Certains liens peuvent rediriger vers des sites tiers. Nous ne sommes
-        pas responsables du contenu, des pratiques ni de la politique de
-        confidentialité de ces plateformes externes.
+        Si vous recherchez des casinos validés par des joueurs authentiques,
+        vous êtes au bon endroit.
       </p>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <a href="https://casinosenlignepro.com/"><h3>Casinos Pourvous</h3></a>
+        <a href="https://casinosenlignepro.com/"
+          ><h3>Nouveaux Casinos - 2025</h3></a
+        >
         <div class="footer-info">
           <div class="footer-text">
             <p>
-              Casinos Pourvous ne souhaite pas que ses informations soient
-              utilisées illégalement. Il vous revient de respecter l’âge légal
-              et les conditions des opérateurs de jeu. En continuant à naviguer,
-              vous acceptez nos conditions d’utilisation et notre politique de
-              confidentialité. Casinos Pourvous soutient la lutte contre le jeu
-              excessif avec SOS Joueurs (0810 600 115)
+              Nouveaux Casinos - 2025 ne souhaite pas que ses informations
+              soient utilisées illégalement. Il vous revient de respecter l’âge
+              légal et les conditions des opérateurs de jeu. En continuant à
+              naviguer, vous acceptez nos conditions d’utilisation et notre
+              politique de confidentialité. Nouveaux Casinos - 2025 soutient la
+              lutte contre le jeu excessif avec SOS Joueurs (0810 600 115)
             </p>
             <p>
               Contenu sponsorisé – Nous percevons une commission des opérateurs
@@ -121,20 +113,30 @@
         <div class="footer-menu">
           <div class="nav">
             <ul>
-              <li><a href="./privacy_policy.html">Jeu responsable</a></li>
               <li>
-                <a href="./conditions.html">Politique relative aux cookies</a>
+                <a href="https://nouveauxcasinos-2025.com/privacy_policy.php"
+                  >Jeu responsable</a
+                >
               </li>
               <li>
-                <a href="./policy_cookies.html">Conditions d’utilisation</a>
+                <a href="https://nouveauxcasinos-2025.com/conditions.php"
+                  >Politique relative aux cookies</a
+                >
               </li>
               <li>
-                <a href="./responsable.html">Politique de confidentialité</a>
+                <a href="https://nouveauxcasinos-2025.com/policy_cookies.php"
+                  >Conditions d’utilisation</a
+                >
+              </li>
+              <li>
+                <a href="https://nouveauxcasinos-2025.com/responsable.php"
+                  >Politique de confidentialité</a
+                >
               </li>
               <li><a href="#" id="contactLink">Contact</a></li>
             </ul>
           </div>
-          <div class="coop"><p>Casinos Pourvous © 2025</p></div>
+          <div class="coop"><p>TopCasinosFrance-2025 © 2025</p></div>
         </div>
       </div>
     </footer>
@@ -143,10 +145,9 @@
       <div class="cookie-popup">
         <h2>Protection de votre vie privée</h2>
         <p>
-          Nous utilisons des cookies afin d’améliorer votre expérience de
-          navigation, personnaliser les contenus et analyser le trafic. En
-          cliquant sur « Accepter tout », vous acceptez l’utilisation des
-          cookies.
+          Nous utilisons des cookies pour améliorer votre expérience,
+          personnaliser les contenus et analyser le trafic. En cliquant sur «
+          Accepter tout », vous consentez à l’usage des cookies.
         </p>
         <div class="cookie-buttons">
           <button id="accept-cookies">Accepter tout</button>
@@ -172,8 +173,8 @@
       <div class="age-popup">
         <h2>Êtes-vous majeur(e) ?</h2>
         <p>
-          Ce site est strictement réservé aux personnes majeures. Merci de
-          confirmer votre âge.
+          Ce site est strictement réservé aux adultes. Merci de confirmer votre
+          âge.
         </p>
         <div class="age-buttons">
           <button id="age-yes">Oui, j’ai 18 ans ou plus</button>

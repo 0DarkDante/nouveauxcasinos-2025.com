@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 :root {
-  --primary: #2a4365; /* Глибокий синій замість чорного */
-  --secondary: #c53030; /* Насичений червоний */
-  --accent: #f6ad55; /* Теплий помаранчевий */
-  --light: #f7fafc;
-  --dark: #1a202c;
+  --bg-main: #121212;
+  --bg-section: #1e1e2f;
+  --text-main: #e0e0e0;
+  --accent-primary: #ff6f61;
+  --accent-secondary: #00d4ff;
+  --shadow-dark: rgba(0, 0, 0, 0.7);
 }
 body,
 html {
@@ -38,10 +39,14 @@ p {
 }
 
 .responsible-block {
-  /* background-color: #9d0613; */
-  background-color: #2d0202;
-  color: #fff;
-  font-size: 12px;
+  background-color: #969696;
+  /* насичений темно-червоний */
+  color: #F5F5F5;
+  /* світлий текст */
+  border: 1.5px solid #CD7F32;
+  /* бронзовий бордер */
+  box-shadow: 0 0 8px rgba(205, 127, 50, 0.7);
+  /* м’яка бронзова тінь */
 }
 .responsible-block > .container {
   display: flex;
@@ -57,12 +62,10 @@ p {
   font-size: 16px;
 }
 .header {
-  /* border-bottom: solid 1px #000; */
-
-  background-color: var(--secondary);
-  color: white;
-  border-bottom: none;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(90deg, #1e1e2f 0%, #ff6f61 100%);
+  color: var(--text-main);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+  padding: 1rem 2rem;
 }
 .header > .container {
   display: flex;
@@ -152,14 +155,25 @@ p {
 }
 
 .sites-item {
-  background-color: #131366;
-  color: #fff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #ffffff;
   margin-bottom: 20px;
-  padding: 50px;
+  padding: 40px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
+  border: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.5);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sites-item:hover {
+  border-color: #ff6a00;
+  box-shadow: 0 12px 35px rgba(255, 106, 0, 0.7);
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
 }
 .star {
   display: flex;
@@ -257,12 +271,12 @@ p {
 }
 
 .bonus .size-text {
-  color: #0060ef;
+  color: #000000;
 }
 .responsable-info {
   padding: 60px;
   border-radius: 30px;
-  background-color: #c5c7d3;
+  background-color: #6b75ae;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -328,9 +342,20 @@ p {
   display: flex;
   justify-content: space-between;
   flex: 1;
-  background-color: #131366;
-  padding: 40px;
+  background: linear-gradient(135deg, #131366 0%, #2a3ab1 100%);
+  padding: 35px 40px;
   border-radius: 30px;
+  border: 3px solid transparent;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 8px 25px rgba(42, 58, 177, 0.5);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.premium-item:hover {
+  border-color: #ff6a00;
+  background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+  box-shadow: 0 12px 35px rgba(255, 106, 0, 0.7);
 }
 .premium-items-one {
   display: flex;
@@ -345,9 +370,12 @@ p {
 
 .footer {
   margin-top: 80px;
-  background-color: #203f7c;
-  padding-top: 50px;
-  color: #fff;
+  background: linear-gradient(135deg, #1b2d6d, #203f7c);
+  padding: 50px 20px;
+  color: #f0f4ff;
+  box-shadow: 0 -4px 20px rgba(32, 63, 124, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 24px 24px 0 0;
 }
 .footer-info {
   display: flex;
@@ -357,12 +385,17 @@ p {
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #e2e3e9;
+  background-color: #1e2641;
+  /* темно-синій фон */
   padding: 20px;
-  color: #000;
+  color: #f0f4ff;
+  /* світлий текст */
   min-width: 330px;
   width: 100%;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(42, 59, 122, 0.5);
+  /* легка тінь */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .age-red {
   background-color: #9d0613;
@@ -537,8 +570,8 @@ p {
 .age-popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(20, 20, 35, 0.9);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,69 +580,72 @@ p {
 }
 
 .age-popup {
-  background: #1e1e1e;
-  color: #f1f1f1;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+  color: #f0f5f9;
   padding: 2.5rem 3rem;
-  border-radius: 20px;
-  max-width: 420px;
+  border-radius: 24px;
+  max-width: 440px;
   width: 100%;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 18px 40px rgba(12, 36, 48, 0.8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
-  animation: fadeInScale 0.35s ease forwards;
+  animation: fadeInScale 0.4s ease forwards;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .age-popup h2 {
   margin-top: 0;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
   font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
 }
 
 .age-popup p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #ddd;
-  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #e1e8ed;
+  margin-bottom: 2.2rem;
+  font-weight: 500;
 }
 
 .age-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
 }
 
 .age-buttons button {
   cursor: pointer;
   border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  padding: 0.75rem 2rem;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  padding: 0.8rem 2.3rem;
   font-weight: 600;
-  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.35);
   user-select: none;
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
+  letter-spacing: 0.02em;
 }
 
 .age-buttons button#age-no {
-  background: #444;
-  color: #bbb;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #555b6e;
+  color: #cbd5e1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .age-buttons button#age-yes:hover {
-  background: linear-gradient(135deg, #66bb6a, #388e3c);
-  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+  background: linear-gradient(135deg, #7b39fb, #4aa1ff);
+  box-shadow: 0 8px 25px rgba(66, 139, 244, 0.8);
 }
 
 .age-buttons button#age-no:hover {
-  background: #666;
-  color: #eee;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #7a8193;
+  color: #f0f4f8;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes fadeInScale {
@@ -617,6 +653,7 @@ p {
     opacity: 0;
     transform: scale(0.85);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -625,12 +662,12 @@ p {
 
 @media (max-width: 480px) {
   .age-popup {
-    padding: 1.5rem 1.5rem;
-    border-radius: 16px;
+    padding: 1.8rem 2rem;
+    border-radius: 18px;
   }
 
   .age-popup h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .age-popup p {
@@ -638,175 +675,132 @@ p {
   }
 
   .age-buttons button {
-    padding: 0.6rem 1.5rem;
+    padding: 0.65rem 1.8rem;
     font-size: 0.95rem;
   }
 }
 
-
-.cookie-popup-overlay {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(10, 10, 10, 0.95);
-  color: #fff;
+.contact-overlay {
   display: none;
-  justify-content: center;
-  z-index: 9998;
-  padding: 20px;
-}
-
-.cookie-popup {
-  max-width: 800px;
-  width: 100%;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 16px;
-}
-
-.cookie-popup a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-.cookie-popup button {
-  margin-top: 15px;
-  padding: 10px 20px;
-  border: 2px solid #fff;
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.cookie-popup button:hover {
-  background: #fff;
-  color: #000;
-}
-
-.main-nav ul {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
   display: flex;
-  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
-.nav-link {
-  position: relative;
-  padding: 10px 0;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-link:hover {
-  color: var(--accent);
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: var(--accent);
-  transition: width 0.3s;
-}
-
-.nav-link:hover::after {
+.contact-modal-content {
+  background: linear-gradient(135deg, #4a8c27 0%, #6db73c 100%);
+  padding: 2.5rem 3rem;
+  border-radius: 20px;
+  max-width: 450px;
   width: 100%;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  animation: fadeIn 0.5s ease forwards;
+  text-align: center;
 }
 
-/* Анімація кнопок */
-.button-bckg {
-  background: #6db73c;
-  transition: all 0.3s;
+.contact-modal-content h2 {
+  margin: 0 0 2rem 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.button-bckg:hover {
-  background: #6db73c;
-  transform: scale(1.05);
+.contact-modal-content input,
+.contact-modal-content textarea {
+  width: 100%;
+  padding: 0.85rem 1.2rem;
+  margin-bottom: 1.3rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background-color: rgba(255 255 255 / 0.9);
+  color: #222;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
 }
 
-/* Анімація карток */
+.contact-modal-content input:focus,
+.contact-modal-content textarea:focus {
+  box-shadow: 0 0 10px #a8e063cc;
+  background-color: #fff;
+}
+
+.contact-modal-content textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.contact-modal-content button[type="submit"] {
+  background: linear-gradient(135deg, #6db73c 0%, #4a8c27 100%);
+  color: #fff;
+  padding: 0.9rem 0;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(109, 183, 60, 0.6);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-modal-content button[type="submit"]:hover {
+  background: linear-gradient(135deg, #4a8c27 0%, #6db73c 100%);
+  box-shadow: 0 6px 14px rgba(74, 140, 39, 0.9);
+}
+
+#closeContactModal {
+  margin-top: 1.5rem;
+  background: transparent;
+  border: none;
+  color: #d0d0d0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.25s ease;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+#closeContactModal:hover {
+  color: #a8e063;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.sites-item {
-  animation: fadeIn 0.6s ease forwards;
-}
-
 @media (max-width: 700px) {
-  .nav > ul {
-    flex-direction: column;
-  }
-  .container {
-    max-width: 350px;
-    width: 100%;
-  }
-  .hero-text {
-    flex-direction: column;
-  }
-  h1 {
-    font-size: 40px;
-  }
-  .guide > .container {
-    flex-direction: column;
-  }
-  h2 {
-    font-size: 35px;
-  }
-  .sites-item {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .responsable-img {
-    flex-direction: column;
-  }
-  .about-games > .container {
-    flex-direction: column;
-  }
-  .premium-info {
-    flex-direction: column;
-  }
-  .premium-items-one {
-    flex-direction: column;
-  }
-  .premium-item {
-    flex-direction: column;
-  }
-  .footer-info {
-    flex-direction: column;
-  }
-  .footer-menu {
-    flex-direction: column;
-    align-items: start;
-  }
-  .footer-respons {
-    width: 80%;
-  }
-  .responsable-info {
-    padding: 30px;
-  }
-  .header > .container {
-    flex-direction: column;
-    align-items: start;
-  }
-  .cookie-popup-overlay {
-    padding: 20px 0;
-  }
-  .cookie-popup {
-    max-width: 350px;
+  .contact-modal-content {
+    padding: 1.8rem 2rem;
   }
 
+  .contact-modal-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-modal-content button[type="submit"] {
+    font-size: 1rem;
+  }
 }
 
 .nav ul li a {
@@ -928,9 +922,10 @@ p {
 }
 
 .contact-modal-content {
-  background: #ffffff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   padding: 2rem 2.5rem;
-  border-radius: 20px; /* Більший радіус для м’якших кутів */
+  border-radius: 20px;
+  /* М'які кути */
   width: 100%;
   max-width: 450px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
@@ -938,6 +933,8 @@ p {
   animation: fadeIn 0.3s ease-in-out;
   position: relative;
   box-sizing: border-box;
+  color: #fff;
+  /* Білий текст для контрасту */
 }
 
 .contact-modal-content h2 {
@@ -1024,85 +1021,99 @@ p {
 
 /* cookie */
 #cookie-consent {
+  /* Залишаємо як було */
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(6px);
+  background: rgba(10, 10, 10, 0.9);
+  /* трошки темніше, щоб більше контрасту */
+  backdrop-filter: blur(8px);
+  /* трохи сильніше розмиття */
   z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
+  /* трохи більше паддінгу */
 }
 
 #cookie-consent .cookie-popup {
-  background: #1e1e1e;
-  color: #f1f1f1;
-  padding: 2.5rem 3rem;
-  border-radius: 20px;
-  max-width: 420px;
+  background: linear-gradient(145deg, #2a2a2a, #1f1f1f);
+  /* сучасний градієнт темних відтінків */
+  color: #eee;
+  padding: 3rem 3.5rem;
+  /* більший паддінг для “повітря” */
+  border-radius: 24px;
+  /* трохи більший радіус */
+  max-width: 440px;
   width: 100%;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.8);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   animation: fadeInScale 0.35s ease forwards;
+  border: 1px solid #444;
+  /* легка окантовка для глибини */
 }
 
 #cookie-consent .cookie-popup h2 {
   margin-top: 0;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
   font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.03em;
 }
 
 #cookie-consent .cookie-popup p {
-  font-size: 1.1rem;
-  line-height: 1.5;
+  font-size: 1.15rem;
+  line-height: 1.6;
   color: #ddd;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
 }
 
 #cookie-consent .cookie-buttons {
   display: flex;
   justify-content: center;
-  gap: 1.2rem;
+  gap: 1.4rem;
   flex-wrap: wrap;
 }
 
 #cookie-consent button {
   cursor: pointer;
   border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  padding: 0.75rem 2rem;
-  font-weight: 600;
-  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  font-size: 1.05rem;
+  padding: 0.85rem 2.5rem;
+  font-weight: 700;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
   user-select: none;
+  letter-spacing: 0.02em;
 }
 
 #accept-cookies {
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-  color: white;
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+  /* більш світлий і яскравий зелений */
+  color: #1a1a1a;
+  box-shadow: 0 6px 22px #a8e063cc;
 }
 
 #accept-cookies:hover {
-  background: linear-gradient(135deg, #66bb6a, #388e3c);
-  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.6);
+  background: linear-gradient(135deg, #7cd956, #c7f27d);
+  box-shadow: 0 0 16px #a8e063dd;
 }
 
 #reject-cookies {
-  background: #444;
-  color: #bbb;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #555;
+  color: #ddd;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 #reject-cookies:hover {
-  background: #666;
-  color: #eee;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #777;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
 }
 
 @keyframes fadeInScale {
@@ -1110,6 +1121,7 @@ p {
     opacity: 0;
     transform: scale(0.85);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -1118,12 +1130,12 @@ p {
 
 @media (max-width: 480px) {
   #cookie-consent .cookie-popup {
-    padding: 1.5rem 1.5rem;
-    border-radius: 16px;
+    padding: 2rem 2rem;
+    border-radius: 20px;
   }
 
   #cookie-consent .cookie-popup h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   #cookie-consent .cookie-popup p {
@@ -1131,7 +1143,7 @@ p {
   }
 
   #cookie-consent button {
-    padding: 0.6rem 1.5rem;
+    padding: 0.7rem 1.8rem;
     font-size: 0.95rem;
   }
 }
@@ -1140,23 +1152,35 @@ p {
   max-width: 900px;
   margin: 4rem auto;
   padding: 2.5rem 3rem;
-  background-color: #1b0606; /* дуже темний бордовий, майже чорний */
-  color: #f7e6e6; /* ніжний світлий текст */
+  background-color: #1b0606;
+  /* дуже темний бордовий, майже чорний */
+  color: #f7e6e6;
+  /* ніжний світлий текст */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 12px;
   box-shadow: 0 6px 25px rgba(27, 6, 6, 0.85);
   line-height: 1.6;
+  /* Плавний перехід кольору фону при наведенні (легкий ефект) */
+  transition: background-color 0.3s ease;
+}
+
+.page-container:hover {
+  background-color: #2a0a0a;
+  /* трохи світліший бордовий при ховері */
 }
 
 .page-container h1 {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #f8c7c7; /* світлий рожевий для заголовка */
+  color: #f8c7c7;
+  /* світлий рожевий для заголовка */
   text-align: center;
   margin-bottom: 2rem;
   letter-spacing: 0.05em;
   border-bottom: 2px solid #3f0f0f;
   padding-bottom: 0.5rem;
+  /* Тінь для заголовка, щоб він краще виділявся */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .page-container p {
@@ -1164,6 +1188,8 @@ p {
   margin-bottom: 1.5rem;
   color: #f9dede;
   text-align: justify;
+  /* Трохи більший міжрядковий інтервал для кращої читабельності */
+  line-height: 1.75;
 }
 
 @media (max-width: 600px) {
